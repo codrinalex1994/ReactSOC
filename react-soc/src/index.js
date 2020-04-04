@@ -3,14 +3,18 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Component1 from './Component1';
-import Component2 from './Component2';
+import CategoriesContainer from './categories-container/CategoriesContainer';
+import Categories from './categories/Categories';
+import Header from './header/Header';
+import Search from './search/Search';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Component1 />
-    <Component2 />
+    <Header />
+    <Categories />
+    <Search />
+    <CategoriesContainer />
   </React.StrictMode>,
   document.getElementById('root')
 );
